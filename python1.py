@@ -1,1 +1,0 @@
-print(varför fukkar du med min kod)
