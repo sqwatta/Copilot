@@ -9,6 +9,13 @@ export default function Home() {
   const [message, setMessage] = useState('');
 
   const clickHandler = (e: React.FormEvent<HTMLFormElement>) => {
+    if(email === '' || subject === '') {
+      setMessage('Fyll i både email och ärende!');
+      setTimeout(() => {
+        setMessage('');
+      }, 5000);
+      return;
+    }
     e.preventDefault();
     setMessage(`VI ÅTERKOMMER TILLBAKA TILL DIN EMAIL: ${email} MED SVAR PÅ DITT ÄRENDE: ${subject}`);
     setTimeout(() => {
@@ -24,7 +31,6 @@ export default function Home() {
       <h1>Tjena Tjena!</h1>
       <p>Så var det med det!</p>
       </div>
-      <img src="./test.jpg" alt="" />
 
       <form className="form-contact" onSubmit={clickHandler}>
         <label htmlFor="email">email:</label>
