@@ -1,2 +1,1 @@
-print(eval(input("endor")))
-
+print("hejsan göran")
