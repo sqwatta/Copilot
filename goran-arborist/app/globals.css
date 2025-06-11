@@ -38,6 +38,15 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: green;
+  font-size: 2rem;
+}
+
+h1 {
+  color: purple
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
