@@ -1,2 +1,0 @@
-first = "anna"
-second = "maria"
