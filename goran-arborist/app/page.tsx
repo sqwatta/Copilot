@@ -9,6 +9,13 @@ export default function Home() {
   const [message, setMessage] = useState('');
 
   const clickHandler = (e: React.FormEvent<HTMLFormElement>) => {
+    if (email === '' || subject === '') {
+      setMessage('Fyll i både email och ärende!');
+      setTimeout(() => {
+        setMessage('');
+      }, 5000);
+      return;
+    }
     e.preventDefault();
     setMessage(`VI ÅTERKOMMER TILL DIN EMAIL: ${email} MED SVAR PÅ DITT ÄRENDE: ${subject}`);
     setTimeout(() => {
@@ -27,7 +34,6 @@ export default function Home() {
         <p>Välkommen till Glabra Trädvård, din lokala arborist i Skåne. Vi erbjuder professionella trädvårdstjänster för att säkerställa att dina träd är friska och välskötta.</p>
         <p>Arborist Göran Vestin</p>
       </div>
-
 
       <form className="form-contact" onSubmit={clickHandler}>
         <label htmlFor="email">email:</label>
