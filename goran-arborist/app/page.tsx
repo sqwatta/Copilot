@@ -10,7 +10,7 @@ export default function Home() {
 
   const clickHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setMessage(`VI ÅTERKOMMER TILLBAKA TILL DIN EMAIL: ${email} MED SVAR PÅ DITT ÄRENDE: ${subject}`);
+    setMessage(`VI ÅTERKOMMER TILL DIN EMAIL: ${email} MED SVAR PÅ DITT ÄRENDE: ${subject}`);
     setTimeout(() => {
       setMessage('');
     }, 5000);
@@ -21,10 +21,13 @@ export default function Home() {
   return (
     <div className="wrapper">
       <div className="header">
-      <h1>Tjena Tjena!</h1>
-      <p>Så var det med det!</p>
+        <h1>Glabra Trädvård</h1>
+        <h2>Arboristtjänster</h2>
+        <h3>Trädvård i Skåne</h3>
+        <p>Välkommen till Glabra Trädvård, din lokala arborist i Skåne. Vi erbjuder professionella trädvårdstjänster för att säkerställa att dina träd är friska och välskötta.</p>
+        <p>Arborist Göran Vestin</p>
       </div>
-      <img src="./test.jpg" alt="" />
+
 
       <form className="form-contact" onSubmit={clickHandler}>
         <label htmlFor="email">email:</label>
