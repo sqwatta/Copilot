@@ -29,8 +29,7 @@ export default function Home() {
     <div className="wrapper">
       <div className="header">
         <h1>Glabra Trädvård</h1>
-        <h2>Arboristtjänster</h2>
-        <h3>Trädvård i Skåne</h3>
+        <h2>Din Arborist i Skåne</h2>
         <p>Välkommen till Glabra Trädvård, din lokala arborist i Skåne. Vi erbjuder professionella trädvårdstjänster för att säkerställa att dina träd är friska och välskötta.</p>
         <p>Arborist Göran Vestin</p>
       </div>
