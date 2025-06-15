@@ -35,12 +35,26 @@ export default function Home() {
       </div>
 
       <form className="form-contact" onSubmit={clickHandler}>
-        <label htmlFor="email">email:</label>
-        <input type="text" id="email" name="email" onChange={(e) => setEmail(e.target.value)} />
+        <label
+          htmlFor="email">email:</label>
 
-        <label htmlFor="subject">ärende:</label>
-        <textarea id="subject" rows={10} name="subject" onChange={(e) => setSubject(e.target.value)} />
-        <button type="submit">Skicka</button>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          onChange={(e) => setEmail(e.target.value)} />
+
+        <label
+          htmlFor="subject">ärende:</label>
+
+        <textarea
+          id="subject"
+          rows={10}
+          name="subject"
+          onChange={(e) => setSubject(e.target.value)} />
+
+        <button
+          type="submit">Skicka</button>
 
         {message && <p className="message">{message}</p>}
       </form>
